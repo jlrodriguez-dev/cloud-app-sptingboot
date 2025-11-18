@@ -9,7 +9,7 @@ import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import io.swagger.v3.oas.annotations.security.SecurityScheme;
 
 @OpenAPIDefinition(
-    info = @Info(title = "Nube App API", version = "V1"),
+    info = @Info(title = "Nube App API", version = "v1"),
     security = @SecurityRequirement(name = "bearerAuth")
 )
 @SecurityScheme(
