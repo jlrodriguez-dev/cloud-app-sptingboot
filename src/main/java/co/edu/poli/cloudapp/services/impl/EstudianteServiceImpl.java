@@ -18,7 +18,14 @@ public class EstudianteServiceImpl implements IEstudianteService{
 
     @Autowired
     private IEstudianteRepository repoEstudiante;
+    
     private ModelMapper modelMapper;
+
+    public EstudianteServiceImpl(IEstudianteRepository repository, 
+                            ModelMapper modelMapper){
+        this.modelMapper = modelMapper;
+        this.repoEstudiante = repository;                         
+    }
 
     @Override
     public EstudianteDTO create(EstudianteDTO estudianteDTO) {
